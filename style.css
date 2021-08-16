@@ -1,0 +1,166 @@
+a{
+  text-decoration: none;
+  color:white;
+}
+body{
+  margin:0;
+}
+h1{
+  margin:0;
+}
+h3{
+  margin:0;
+}
+.navbar{
+  position:fixed;
+  width:100%;
+  height:10vh;
+
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-end;
+  align-items: center;
+
+  background-color:#910000;
+  z-index:10000000;
+}
+.nav-a{
+  font-size: 25px;
+  padding-right:5vw;
+}
+
+
+#greeting{
+  height:100vh;
+
+  background:linear-gradient(45deg, #494949, #202020);
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+.welcome-name{
+  color:#EFEFEF;
+  font-size:45px;
+  margin-bottom: 0;
+  font-family: sans-serif;
+}
+.welcome-job{
+  color:#C24444;
+  font-size:25px;
+  font-family: serif;
+  font-weight: 100;
+}
+
+
+
+#projects{
+  min-height:80vh;
+  height:auto;
+
+
+  background:hsl(220,35%,35%);
+}
+.projects-h1{
+  color:white;
+  text-align:center;
+  font-size:50px;
+  padding-top:30px;
+
+}
+.cards {
+  padding-top: 50px;
+  padding-bottom:50px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 5rem;
+  
+  width:75%;
+  margin:0 auto;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+  text-align: center;
+}
+
+
+#contact{
+  background-color:#393A42;
+  height:100vh;
+
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-h1{
+  text-align: center;
+  color:#EFEFEF;
+  font-size:50px;
+  font-family:sans-serif;
+  margin-bottom:10px;
+}
+.contact-h3{
+  text-align: center;
+  color:#EFEFEF;
+  font-size:20px;
+  font-weight:100;
+  font-family:sans-serif;
+}
+.contacts{
+  display:flex;
+  justify-content: center;
+}
+.profile-link{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  width: 20%;
+}
+.profile-link-img{
+  width:20%;
+  text-align:right;
+  margin-right: 0;
+}
+.profile-link-p{
+  font-size: 20px;
+  font-family: sans-serif;
+  margin-left:6px;
+}
+.profile-link:hover{
+  position:relative;
+  animation-name:ani;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+@keyframes ani{
+  0%{
+    top:0px;
+  }
+  100%{
+    top:10px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .profile-link{
+    width:33%;
+  }
+}
+
+
+
+
+
+
